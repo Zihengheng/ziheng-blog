@@ -17,7 +17,7 @@ webpack打包的时候：--> 递归地构建一个dependency graph（依赖关�
 
 ### 1. entry points(入口起点)
 
-#### 1.1 语法
+### 1.1 语法
 
 * 单个入口
 * 对象语法
@@ -25,6 +25,24 @@ webpack打包的时候：--> 递归地构建一个dependency graph（依赖关�
 #### 1.2 场景
 
 ##### 多页面应用程序
+
+多页面应用程序的config：
+
+```json
+const config = {
+  entry: {
+    pageOne: './src/pageOne/index.js',
+    pageTwo: './src/pageTwo/index.js',
+    pageThree: './src/pageThree/index.js'
+  }
+};
+```
+
+
+
+## output （输出）
+
+
 
 
 
