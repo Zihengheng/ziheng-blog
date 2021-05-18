@@ -90,5 +90,50 @@ let a = `${ value } to the ${ exponent } power is ${ value * value }`
 
 ##### 4）模版字面量标签函数
 
+##### 5）原始字符串
 
+#### 3.7 Symbol()
 
+Symbol()是原始值，且符号实例是唯一的、不可变的。
+
+Symbol（）的用途是确保对象属性使用唯一标识符，不会发生属性冲突的危险。
+
+```javascript
+let sym = symbol();
+```
+
+Symbol()没有字面量语法
+
+##### 1）全局符号注册表
+
+在全局符号注册表中创建并复用：
+
+```javascript
+let fooGlobalSym = Symbol.for("foo");
+```
+
+查询全局注册表：Symbol.keyFor()
+
+```javascript
+let s = Symbol.for("foo");
+let rst = Symbol.keyFor(s);
+//s = foo;
+```
+
+##### 2）符号作为属性
+
+##### 3）常用内置符号
+
+#### 3.8 Object类型
+
+创建对象:
+
+```javascript
+let o = new Object();
+```
+
+每个Object实例的属性和方法：
+
+* **Constructor:**用于创建当前对象的函数
+* **hasOwnProperty(*propertyName*):**用于判断当前的实例（Object）上是否存在给定的属性。要检查的属性必须是字符串或符号
+* **isPrototypeOf(*Object)* :** 
