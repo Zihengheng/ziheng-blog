@@ -2,9 +2,9 @@
 
 ## 语言基础
 
-### 2. 变量
+### 3. 变量
 
-### 3. 数据类型
+### 4. 数据类型
 
 **6**种简单数据类型：Undefined, Null, Boolean, Number, String, Symbol
 
@@ -136,4 +136,29 @@ let o = new Object();
 
 * **Constructor:**用于创建当前对象的函数
 * **hasOwnProperty(*propertyName*):**用于判断当前的实例（Object）上是否存在给定的属性。要检查的属性必须是字符串或符号
-* **isPrototypeOf(*Object)* :** 
+* **isPrototypeOf(*Object)* :** 判断当前对象是否为另一个对象的原型
+* propertyIsEnumerable(propertyName)
+* toLocaleString():
+* toString()
+* valueOf()
+
+### 5. 操作符
+
+#### 条件操作符
+
+```javascript
+ variable = boolean_expression ? true_value : false_value;
+//excp
+let max = (num1 > num2) ? num1: num2;
+```
+
+##### 逗号操作符
+
+一条语句中执行多个操作
+
+```javascript
+let num1=1, num2 = 2, num3 = 9;
+```
+
+### 6. 语句
+
