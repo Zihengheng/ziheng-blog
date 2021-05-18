@@ -59,15 +59,36 @@ isNaN() --> NaN 返回true，可以转换为数值--> false
 
 #### 3.6 String
 
+##### 1）转换为字符串：
+
+* toString()
+* String()
+  * 如果值有toString方法，则调用该方法并返回结果
+  * 值是null， 返回null
+  * 值是undefined, 返回undefined
+
+##### 2）模版字面量
+
+保留换行字符
+
+```java
+let pageHTML = `
+<div>
+  <a href="#">
+    <span>Jake</span>
+  </a>
+</div>`
+```
+
+##### 3）字符串插值
+
+```java
+let value = 5;
+let component = 'second';
+let a = `${ value } to the ${ exponent } power is ${ value * value }`
+```
+
+##### 4）模版字面量标签函数
 
 
-
-
-
-
-## DOM
-
-，
-
-## BOM
 
