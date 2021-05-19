@@ -18,7 +18,17 @@
 
 ## 链表
 
-链表中的每个元素由
+![linked-list](https://gitee.com/zihengheng/img-bed/raw/master/%20images/linked_list.png)
+
+链表中的每个元素:一个存储元素本身的节点+ 指向下一个元素的引用
+
+
+
+
+
+
+
+
 
 
 

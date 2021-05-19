@@ -1,4 +1,5 @@
 * [home](README)
+* [装机记录](notes/setup)
 * 框架+打包
   * [vue3](notes/vue3)
   * [webpack](notes/webpack)
