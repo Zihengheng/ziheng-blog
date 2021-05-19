@@ -115,8 +115,21 @@ getElementAt(index){
 
 ##### 4. 在任意位置插入元素
 
-```
-
+```javascript
+insert(element,index){
+  if(index <= 0 && index < this.count){
+    const node = new Node(element);
+    if (index==0){
+      //head
+      let cur = this.head;
+      node.next = cur;
+      this.head = node;
+		}
+    else{
+      
+		}
+  }
+}
 ```
 
 
