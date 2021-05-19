@@ -6,3 +6,20 @@
 // 说明：
 // 用返回一个整数列表来代替打印
 // n 为正整数
+/**
+ * @param {number} n
+ * @return {number[]}
+ */
+ var printNumbers = function(n) {
+     let number = [];
+     if (n==1){
+         for(let i=1;i<10;1++){
+             number.push(i);
+         }
+         return number;
+     }
+     else{
+         //n>1
+         
+     }
+};
