@@ -22,6 +22,26 @@
 
 链表中的每个元素:一个存储元素本身的节点+ 指向下一个元素的引用
 
+访问链表中的元素：从表头开始迭代链表，直到找到所需的元素
+
+##### 实现一个链表
+
+```javascript
+export class Node{
+	constructor (element){
+	     this.element = element;
+	     this.next = null;
+     }
+}
+```
+
+**链表方法：**
+
+* Push(element)
+* Insert(element, position)
+* getElementAt(index)
+* 
+
 
 
 
