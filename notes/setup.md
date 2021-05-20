@@ -106,6 +106,14 @@ agnoster
 
 powershell
 
+##### Oh-my-zsh
+
+Update:
+
+![omz-update](https://gitee.com/zihengheng/img-bed/raw/master/%20images/omz-update.png)
+
+
+
 ## 安装node环境
 
 ```zsh

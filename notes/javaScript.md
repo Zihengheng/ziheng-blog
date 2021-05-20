@@ -162,3 +162,98 @@ let num1=1, num2 = 2, num3 = 9;
 
 ### 6. 语句
 
+#### 1）if
+
+if (confition) statement1 else statement2
+
+#### 2）do-while
+
+do{	statement	}
+
+While (expression);
+
+#### 3）while
+
+```javascript
+let i = 0 ;
+while (i < 10){
+  i += 2;
+}
+```
+
+#### 4）for
+
+```javascript
+let count = 10;
+for (let i = 0; i < count; i++){
+	console.log(i);
+}
+```
+
+#### 5）for in
+
+for (property in expression ) statement
+
+枚举对象中的非符号键属性
+
+#### 6） for of
+
+遍历可迭代对象的元素：
+
+for (property of expression ) statement
+
+#### 7）标签语句
+
+#### 8）brek & continue
+
+#### 9）with
+
+#### 10）switch
+
+```javascript
+switch (i){
+	case 25:
+	   //pass
+	case 35:
+	  console.log("25 or 35");
+    break;
+  default:
+    console.log("other");
+}
+```
+
+
+
+### 7. function
+
+## 变量，作用域与内存
+
+### 1）原始值与引用值
+
+**原始值：**
+
+* Undefined, null, Boolean, Number, String, Symbol
+
+* visit by value
+* **执行赋值操作**时，原始值会被复制到新变量的位置。复制后两个值可以独立使用，互不干扰。
+
+**引用值：**
+
+* visit by reference
+
+* 保存在内存中的对象
+
+* 拥有动态属性
+
+  ```javascript
+  let person = new Object();
+  person.name = "Tom";
+  console.log(person.name)  //Tom
+  ```
+
+* **执行赋值**操作时，复制的是引用变量的指针；复制后两个变量实际指向的是同一个对象，因此一个对象上的变化会在另一个对象上反映出来
+
+**传递参数**  
+
+
+

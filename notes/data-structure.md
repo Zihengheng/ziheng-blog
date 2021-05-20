@@ -126,9 +126,15 @@ insert(element,index){
       this.head = node;
 		}
     else{
-      
-		}
-  }
+      const prev = this.getElementAt(index - 1);
+      const cur = prev.next;
+      node.next = cur;
+      prev.next = node;	
+    }
+    this.count++;
+    return true;
+}
+  return false;
 }
 ```
 
