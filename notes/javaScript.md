@@ -255,5 +255,16 @@ switch (i){
 
 **传递参数**  
 
+* 原始值同原始值复制
+* 引用值同引用值复制
+
+**确定类型**
+
+instanceof 可以用来确定对象的类型（Arrary, RegExp.etc）
+
+result = variable instanceof constructor
+
+### 3）执行上下文与作用域
+
 
 

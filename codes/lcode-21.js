@@ -21,20 +21,27 @@
      }
      else{
         var dummy = new ListNode(0);
-        while(l1!= null && l2 != null){
+        var head = dummy;
+        while(l1!== null && l2 !== null){
             if(l1.val<=l2.val){
                 dummy.next = l1;
-                l1 = l1.next;
-                dummy = dummy.next;
+                let cur = l1.next;
+                l1.next = null;
+                l1 = cur;
+                dummy = dummy.next;            
             }
             else{
                 dummy.next = l2;
-                l2 = l2.next;
-                dummy = dummy.next;
+                let cur = l2.next;
+                l2.next = null;
+                l2 = cur; 
+                dummy = dummy.next;             
             }
+            //剩l1连l1 剩l2连l2
+            dummy.next = (l1==null) ? l2 : l1;
         }
-        var node = dummy.next;
-        dummy.next = null;
+        let node = head.next;
+        head.next = null;
         return node;
      }
 };
