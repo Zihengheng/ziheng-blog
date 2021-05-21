@@ -266,5 +266,29 @@ result = variable instanceof constructor
 
 ### 3）执行上下文与作用域
 
+## 基本引用类型
 
+## 集合引用类型
+
+### 4. Map
+
+使用new关键字和map构造函数可以创造一个空映射：
+
+```javascript
+const m = new map();
+//创建的同时初始化
+const m1 = new map([
+  ["key1", "val1"],
+  ["key2", "val2"],
+  ["key3", "val3"]
+]);
+```
+
+初始化之后，可以使用set()方法添加键值对；
+
+可以使用get()和has()进行查询；
+
+可以通过size属性获取映射中键值对的数量；
+
+可以使用delete() 和 clear() 删除值；
 
