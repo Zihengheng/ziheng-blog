@@ -1,6 +1,6 @@
 # Data-structure
 
-## Stack
+## 1. Stack
 
 栈遵循先进后出（FILO）的原则；
 
@@ -8,7 +8,7 @@
 
 旧元素靠近栈底
 
-## 队列和双端队列
+## 2. 队列和双端队列
 
 队列遵循先进先出(FIFO)的原则;
 
@@ -16,7 +16,7 @@
 
 从顶部移除元素
 
-## 链表
+## 3. 链表
 
 ![linked-list](https://gitee.com/zihengheng/img-bed/raw/master/%20images/linked_list.png) 
 
@@ -138,17 +138,17 @@ insert(element,index){
 }
 ```
 
-## 集合
+## 4. 集合
 
 集合是由一组无序且唯一的项组成的
 
-## 字典和散列表
+## 5. 字典和散列表
 
 ### 字典
 
 字典以【键，值】的方式来存储元素
 
-## 散列表
+### 散列表
 
 * 由数据项的值来确定其存放的位置
 * hash table 是一种数据集，其中数据项的存储方式尤其有利于将来快速的查找定位
@@ -167,6 +167,53 @@ insert(element,index){
 * 散列函数设计：
   * 求余法
   * 平方取中法
+  * 非数项：每个字符的ASCII码相加 （对所有变位词返回相同的散列值，可以把位置作为权重因子）
+
+##### 冲突解决方案
+
+* 一种方法：为冲突的数据项**再找一个**空槽来保存 --> 开放地址（open addressing）
+* **向后**寻找空槽 --> open addressing 中的 linear probing (线性探测)
+* Chaining: 槽扩展为容纳数据项集合
+
+## 6. 递归
+
+直接调用自身的方法或函数
+
+每个递归必须有一个**停止点** ，以防止无限递归
+
+##### 1）阶乘
+
+```javascript
+//n的阶乘
+var factorialFun  = function(n){
+    if(n ==1 || n==0){
+        return 1;
+    }
+    else{
+        return n*factorialFun(n-1);
+    }
+}
+```
+
+##### 2）斐波那契数列
+
+```javascript
+function fibonacci(n){
+    if(n==0){
+        return 0;
+    }
+   if (n==1 || n==2){
+        return 1;
+    }
+    else{
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+}
+```
+
+## 7. 树
+
+![tree](https://gitee.com/zihengheng/img-bed/raw/master/%20images/data-structure-tree.png)
 
 
 
