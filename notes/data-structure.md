@@ -213,17 +213,41 @@ function fibonacci(n){
 
 ## 7. 树
 
-![tree](https://gitee.com/zihengheng/img-bed/raw/master/%20images/data-structure-tree.png)
+### 1）树的结构
 
+![ds-tree](https://gitee.com/zihengheng/img-bed/raw/master/%20images/ds_tree.png)
 
+**节点：node**
 
+**边：edge**
 
+根结点：root
 
+二叉树：二叉树中节点最多只能有两个子节点
 
+### 2）二叉搜索树
 
+二叉搜索树（BST）是二叉树的一种，但是只允许在左侧节点存储（比父节点）小的值，在右侧节点存储（比父节点）大的值。
 
+##### 2.1 实现BinarySearchTree
 
+```javascript
+export class Node{
+		constructor(key){
+				this.key = key;
+				this.left = null;
+				this.right = null;
+		}
+}
+```
 
+![bst](https://gitee.com/zihengheng/img-bed/raw/master/%20images/bst-tree.png)
 
+##### 2.2 向二叉搜索树中插入一个键
 
+```
 
+```
+
+1. 验证插入的节点是否为根节点
+2. 找到插入新节点的位置
