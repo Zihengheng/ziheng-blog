@@ -1,6 +1,6 @@
 # javaScript
 
-## 语言基础
+## 一、语言基础
 
 ### 3. 变量
 
@@ -226,9 +226,9 @@ switch (i){
 
 ### 7. function
 
-## 变量，作用域与内存
+## 二、变量，作用域与内存
 
-### 1）原始值与引用值
+### 1. 原始值与引用值
 
 **原始值：**
 
@@ -264,11 +264,63 @@ instanceof 可以用来确定对象的类型（Arrary, RegExp.etc）
 
 result = variable instanceof constructor
 
-### 3）执行上下文与作用域
+### 2. 执行上下文与作用域
 
-## 基本引用类型
+上下文：每个上下文都有一个关联的变量对象，而这个上下文中定义的所有变量和函数都存在于这个对象上。
 
-## 集合引用类型
+* 全局上下文是最外层的上下文
+* 上下文在其所有代码执行完毕后会被销毁
+* 上下文中的代码在执行的时候，会创建变量对象的一个作用域链（scope chain）。
+* 
+
+## 三、基本引用类型
+
+### 1. date
+
+创建日期对象
+
+```javascript
+let now = new Date();
+//无参数保存当前的日期和时间
+```
+
+Date.parse() 方法接收一个表示日期的字符串参数
+
+创建一个表示“2019年5月23日”的日期对象：
+
+```javascript
+let someDate = new Date(Data.parse("May 23,2019"));
+```
+
+##### 1）继承的方法
+
+toLocalString():返回与浏览器运行的本地环境一致的日期和时间
+
+toString():返回带时区信息的日期和时间
+
+两者更适合用于调试而不是显示（在老浏览器上显示可能不一样）
+
+##### 2）日期格式化方法
+
+* toDateString():显示日期中的周几、月、日、年（格式特定于实现）
+* toTimeString():
+* toLocalDateString()
+* ToLocalTimeString()
+* toUTCString()
+
+### 2. RegExp
+
+创建正则表达式：
+
+```javascript
+let expression = /pattern/flags;
+```
+
+### 3. 原始包装类型
+
+
+
+## 四、集合引用类型
 
 ### 4. Map
 
