@@ -318,7 +318,31 @@ let expression = /pattern/flags;
 
 ### 3. 原始包装类型
 
+使用原始值的方法或属性时 --> 创建相应的原始包装类型的对象
 
+#### 3.1 Boolean
+
+#### 3.2 Number
+
+#### 3.2 String
+
+##### 1) 字符串的操作方法
+
+* concat()
+* +
+* slice()
+* substr()
+* substring()
+
+##### 2) 字符串位置方法
+
+* indexOf()
+* lastIndexOf()
+
+##### 3) 字符串包含方法
+
+* startsWidth()
+* 
 
 ## 四、集合引用类型
 
